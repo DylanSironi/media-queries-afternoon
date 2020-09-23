@@ -26,6 +26,11 @@ class App extends Component() {
           </div>
           <div className='navbar-icon'  onClick= {this.slide}> Menu &#9776;</div>
         </header>
+        <div className={this.state.menu ? 'menu-slide': 'do not display'}>
+            <a href='#'>About</a>
+            <a href='#'>Projects</a>
+            <a href='#'>Contacts</a>
+          </div>
         <div className="main">
           <h1 className='bigTitle'>GRAYSCALE</h1>
           <h2 className='smallTitle'>A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>

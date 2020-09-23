@@ -37,10 +37,25 @@ a {
   justify-content: center;
   border-radius: 10%;
 }
-.slide{
-  right: 0;
+.do-not-display{
+  display: none;
 }
-
+.menu {
+  height: 200px;
+  width: 100vw;
+  background-color: white;
+  position: fixed;
+  top: -200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  transition: .5;
+  color: gray;
+}
+.slide{
+  top: 70px
+}
 .main{
   display: flex;
   height: 100vh;
@@ -69,8 +84,9 @@ a {
     display: flex;
     display: none;
   }
- 
+  
 }
+
 @media(min-width:1001px){
 
   header{
@@ -83,6 +99,9 @@ a {
   }
   .navbar-icon{
     display: flex;
+    display: none;
+  }
+  .menu{
     display: none;
   }
 }
