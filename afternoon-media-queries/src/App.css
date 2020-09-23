@@ -1,0 +1,88 @@
+.app{
+  box-sizing: border-box;
+}
+header{
+  display: flex;
+  color: rgb(212, 211, 211);
+  justify-content: space-evenly;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  height: 70;
+}
+.navbar-title{
+  display: flex;
+  font-size: 20px;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  width: 300px;
+  font-size: 17px;
+}
+a {
+  color: rgb(236, 232, 232);
+  margin: 10%;
+  text-decoration: none;
+}
+.navbar-icon{
+  color: rgb(99, 202, 168);
+  border: 1px solid rgb(99, 202, 168);
+  height: 40px;
+  width: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10%;
+}
+.slide{
+  right: 0;
+}
+
+.main{
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url('https://startbootstrap.github.io/startbootstrap-grayscale/assets/img/bg-masthead.jpg');
+  background-position: center;
+  background-blend-mode: hard-light ;
+  background-color: rgb(32, 32, 32);
+  color: rgb(92, 91, 91);
+}
+
+@media (max-width: 1000px){
+  header{
+    display: flex;
+    background-color: rgb(253, 252, 252);
+  }
+  .navbar-title{
+    display: flex;
+    color: black;
+
+  }
+  .navbar-menu{
+    display: flex;
+    display: none;
+  }
+ 
+}
+@media(min-width:1001px){
+
+  header{
+    display: flex;
+    
+  }
+  .navbar-title{
+    display: flex;
+    /* margin-right: 10%; */
+  }
+  .navbar-icon{
+    display: flex;
+    display: none;
+  }
+}
